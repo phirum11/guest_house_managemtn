@@ -1,0 +1,22 @@
+@media print {
+  aside,
+  header,
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  .print-card {
+    break-inside: avoid;
+    border-color: #ddd !important;
+    box-shadow: none !important;
+  }
+}

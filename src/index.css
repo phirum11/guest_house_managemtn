@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Roboto:ital,wght@0,100..900;1,100..900&family=Siemreap&display=swap');
+@import "tailwindcss";
+@import "./styles/theme.css";
+@import "./styles/print.css";
+
+@layer base {
+  :root {
+    color-scheme: light;
+    font-family: var(--font-sans);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    background: var(--color-cream-100);
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100svh;
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(156, 75, 47, 0.06), transparent 60%),
+      var(--color-cream-100);
+    color: var(--color-ink);
+    line-height: 1.7;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: var(--color-brand-soft);
+    color: var(--color-brand-strong);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-line-strong) transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: var(--color-line-strong);
+    border-radius: 999px;
+  }
+}
+
+@layer utilities {
+  .kbd {
+    @apply inline-flex items-center rounded border border-line bg-cream-50 px-1.5 py-0.5 text-[10px] font-medium text-ink-soft;
+  }
+
+  .hairline {
+    @apply border-line;
+  }
+
+  .card-surface {
+    @apply rounded-xl border border-line bg-cream-50 shadow-card;
+  }
+
+  .field {
+    @apply h-10 w-full rounded-lg border border-line bg-cream-50 px-3 text-[13px] text-ink outline-none transition placeholder:text-ink-faint focus:border-brand-line focus:ring-2 focus:ring-brand-soft;
+  }
+
+  .eyebrow {
+    @apply text-[10px] font-semibold uppercase tracking-[0.18em] text-ink-faint;
+  }
+}

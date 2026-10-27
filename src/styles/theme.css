@@ -1,0 +1,45 @@
+@theme {
+  --font-sans: "Kantumruy Pro", "Noto Sans Khmer", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Noto Serif Khmer", "Kantumruy Pro", ui-serif, serif;
+
+  --color-cream-50: #fcfaf5;
+  --color-cream-100: #f6f1e7;
+  --color-cream-200: #efe8da;
+  --color-cream-300: #e6ddcd;
+  --color-line: #e3dbcd;
+  --color-line-strong: #d3c8b7;
+
+  --color-ink: #2f2a24;
+  --color-ink-soft: #756d62;
+  --color-ink-faint: #9a9184;
+
+  --color-brand: #9c4b2f;
+  --color-brand-strong: #813a23;
+  --color-brand-soft: #f4e4da;
+  --color-brand-line: #e5c8b8;
+
+  --color-sage: #64795b;
+  --color-sage-soft: #e7eddf;
+  --color-sage-line: #cfdac4;
+
+  --color-amber: #a9772c;
+  --color-amber-soft: #f7ecd7;
+  --color-amber-line: #ecd9b4;
+
+  --color-danger: #a3493a;
+  --color-danger-soft: #f7e3dd;
+  --color-danger-line: #eccbc2;
+
+  --color-info: #5b6f7d;
+  --color-info-soft: #e7edf0;
+
+  --shadow-card: 0 1px 2px rgba(47, 42, 36, 0.04), 0 10px 30px -18px rgba(47, 42, 36, 0.25);
+}
+
+@layer utilities {
+  .khmer-regular {
+    font-family: "Khmer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
