@@ -98,7 +98,7 @@ export default function Sidebar({ open, onClose }) {
       />
       <aside
         className={[
-          'fixed inset-y-0 left-0 z-50 flex w-[264px] shrink-0 flex-col border-r border-line bg-[#454444] transition-transform lg:sticky lg:top-0 lg:z-30 lg:h-screen lg:translate-x-0',
+          'fixed inset-y-0 left-0 z-50 flex w-[264px] shrink-0 select-none flex-col border-r border-line bg-[#454444] transition-transform lg:sticky lg:top-0 lg:z-30 lg:h-screen lg:translate-x-0',
           open ? 'translate-x-0' : '-translate-x-full',
         ].join(' ')}
       >
